@@ -2,6 +2,6 @@
 
 // 各ページのカスタマイズするCSSを記述します。
 .about {
-  background: global.colors(primary);
-  color: global.colors(white);
+  background: var(--color-primary);
+  color: var(--color-white);
 }

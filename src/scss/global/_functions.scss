@@ -1,6 +1,0 @@
-@use './variable' as var;
-
-/// カラーコード定義したものを呼び出す
-@function colors($key) {
-  @return map-get(var.$color-list, $key)
-}

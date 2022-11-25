@@ -12,7 +12,8 @@
     "build:scss": "sass ./src/scss:./build/assets/css",
     "build:js": "browserify ./src/babel/index.js -o ./build/assets/js/bandle.js",
     "autoprefixer": "postcss ./build/assets/css/**/*.css -c ./postcss.config.js --replace",
-    "build:images": "imagemin ./src/images/* -o ./build/images/",
+    "build:images": "imagemin ./src/images/* -o ./build/assets/images/",
+    "build:static": "cp -p -r ./src/static/ ./build",
     "watch:html": "nunjucks '**/*.html' -w -p ./src/html -o ./build",
     "watch:scss": "sass --watch ./src/scss:./build/assets/css",
     "watch:css": "watch \"npm run autoprefixer\" ./build/assets/css",
@@ -63,5 +64,6 @@
     "sass": "^1.32.8",
     "watch": "^1.0.2",
     "watchify": "^4.0.0"
-  }
+  },
+  "dependencies": {}
 }

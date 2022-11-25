@@ -1,5 +1,5 @@
 'use strict';
 
-const test = require('./test.js');
+const test = require('./common/test.js');
 
 test;
