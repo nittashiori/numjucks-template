@@ -2,7 +2,7 @@
 
 
 .header {
-  background-color: global.colors(bg);
+  background-color: var(--color-bg);
   margin-block-start: 30px;
   margin-block-end: 30px;
   margin-inline-start: 20px;

@@ -1,18 +1,21 @@
 // base
 // ------------------------------------
-@use 'foundation';
-@use 'foundation/form';
+@import 'global/index';
+@import 'global/base';
 
 // layout
 // ------------------------------------
-@use 'layouts/header';
-@use 'layouts/footer';
-@use 'layouts/sidenav';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+// module
+// ------------------------------------
+@import 'module/button';
 
 // page
 // ------------------------------------
-@use 'page/about';
+@import 'page/about';
 
 // state
 // ------------------------------------
-@use 'state/slider';
+@import 'state/index';
